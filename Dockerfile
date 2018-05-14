@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM python:latest
 MAINTAINER 4220182 <4220182@qq.com>
-COPY start.sh /usr/bin/start
-CMD start
+COPY generate-message /usr/bin/generate-message
+CMD generate-message
