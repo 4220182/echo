@@ -52,7 +52,7 @@ def main():
       'page': page,
       'server': server,
       'http_method': 'GET',
-      'http_code': '200',
+      'couter': count,
       'unit': 'milliseconds'
     }))
     time.sleep(sleep)
