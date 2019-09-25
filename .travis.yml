@@ -1,2 +1,7 @@
 language: python
-script: true
+services:
+  - docker
+script:
+- echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+- docker build -t koza/echo:0.0.1 .
+- docker push koza/echo:0.0.1
